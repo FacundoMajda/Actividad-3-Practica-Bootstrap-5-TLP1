@@ -9,45 +9,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
     <title>LearnNow - Cursos</title>
   </head>
   <body>
+    
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            >LearnNow-Courses Powered by Bootstrap</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Courses</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="header bg-dark">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container"><a class="navbar-brand" href="#">Company Name</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Link</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                        </li>
+                    </ul>
+                    <form class="form-inline mr-auto" target="_self">
+                        <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
+                    </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></div>
+            </div>
+        </nav>
+      </div>
     </header>
+
+    <!-- Begin page content -->
     <main class="container my-5">
       <h1 class="mb-3">Últimos Cursos</h1>
       <ul class="nav nav-tabs mb-4">
@@ -79,8 +66,8 @@
           <div class="row py-5">
             <div class="col-lg-12 mx-auto">
               <div class="text-white p-5 shadow-sm rounded banner">
-                <h1 class="display-4">Gakeria de cursos</h1>
-                <p class="lead">LearnNow.</p>
+                <h1 class="display-4">Galería de cursos</h1>
+                <h3>LearnNow.</h3>
                 <p class="lead">
                   Developed by
                   <a href="https://github.com/FacundoMajda" class="text-reset">
@@ -90,103 +77,117 @@
               </div>
             </div>
           </div>
-      
-<!-- Tarjetera -->
-              <section class="container my-5">
-                <div class="row">
-                    <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1015/400/300" class="card-img-top" alt="Curso 1">
-                      <div class="card-body">
-                        <h5 class="card-title">HTML para principiantes</h5>
-                        <p class="card-text"> Aprende a utilizar HTML para construir sitios web desde cero.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
+    
+          
+          <!--Tarjetera nueva  -->
+          <div class="row">
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-1.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">HTML para principiantes</a></h5>
+                  <p class="small text-muted mb-0">Aprende a utilizar HTML para construir sitios web desde cero.</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                    <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+          
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-2.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Introducción a Python</a></h5>
+                  <p class="small text-muted mb-0">Aprende a programar en Python desde cero y domina el lenguaje de programación más popular.</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                    <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+          
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-3.jpg" alt="" class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Diseño gráfico para principiantes</a></h5>
+                  <p class="small text-muted mb-0">Aprende los fundamentos del diseño gráfico y conviértete en un experto en la creación de diseños impresionantes.</p>
+                  <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+                    <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+              
+          <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-4.jpg" alt="" class="img-fluid card-img-top">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Desarrollo de aplicaciones móviles para iOS</a></h5>
+                    <p class="small text-muted mb-0">Aprende a programar aplicaciones móviles para iOS y publica tus creaciones en la App Store de Apple.</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+                      <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">Semántica en HTML</h5>
-                        <p class="card-text">Descubre cómo utilizar las etiquetas semánticas para mejorar la accesibilidad de tus sitios web.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">HTML5 y CSS3</h5>
-                        <p class="card-text">Aprende las últimas técnicas y herramientas para construir sitios web modernos y responsivos.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                    
-                    
-                  </div>
-                        <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">Fundamentos de CSS</h5>
-                        <p class="card-text">Aprende a dar estilo a tus sitios web utilizando CSS y a crear diseños atractivos y funcionales.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                    
-                  </div>      
-            </section>
-            <section class="container my-5">
-                <div class="row">
-                    <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1015/400/300" class="card-img-top" alt="Curso 1">
-                      <div class="card-body">
-                        <h5 class="card-title">Flexbox y CSS Grid</h5>
-                        <p class="card-text">Descubre las últimas herramientas de CSS para crear diseños flexibles y responsivos.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">Animaciones con CSS</h5>
-                        <p class="card-text">Aprende a utilizar CSS para crear animaciones y efectos visuales en tus sitios web.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">JavaScript para principiantes</h5>
-                        <p class="card-text">Aprende los conceptos básicos de la programación con JavaScript y cómo utilizarlo para crear interacciones en tus sitios web.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                    
-                    
-                  </div>
-                        <div class="col-md-3">
-                    <div class="card">
-                      <img src="https://picsum.photos/id/1016/400/300" class="card-img-top" alt="Curso 2">
-                      <div class="card-body">
-                        <h5 class="card-title">Node.js y Express</h5>
-                        <p class="card-text">Descubre cómo utilizar Node.js y Express para construir aplicaciones web del lado del servidor.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                    
-                  </div>    
-                
+                </div>
+              </div>
+              <!-- End -->
+            <!-- Gallery item -->
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white rounded shadow-sm">
+    <img src="https://bootstrapious.com/i/snippets/sn-gallery/img-5.jpg" alt="" class="img-fluid card-img-top">
+    <div class="p-4">
+      <h5> <a href="#" class="text-dark">Desarrollo de aplicaciones móviles para Android</a></h5>
+      <p class="small text-muted mb-0">Aprende a programar aplicaciones móviles para Android y publica tus creaciones en Google Play Store.</p>
+      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+        <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+        <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Nuevo</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
 
-                  
-            </section>  
+<!-- Gallery item -->
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white rounded shadow-sm">
+    <img src="https://bootstrapious.com/i/snippets/sn-gallery/img-6.jpg" alt="" class="img-fluid card-img-top">
+    <div class="p-4">
+      <h5> <a href="#" class="text-dark">Diseño gráfico con Adobe Photoshop</a></h5>
+      <p class="small text-muted mb-0">Aprende a utilizar Adobe Photoshop para crear diseños gráficos increíbles.</p>
+      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+        <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+        <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Oferta</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
+
+<!-- Gallery item -->
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white rounded shadow-sm">
+    <img src="https://bootstrapious.com/i/snippets/sn-gallery/img-7.jpg" alt="" class="img-fluid card-img-top">
+    <div class="p-4">
+      <h5> <a href="#" class="text-dark">Desarrollo web con Node.js</a></h5>
+      <p class="small text-muted mb-0">Aprende a desarrollar aplicaciones web con Node.js, Express.js y MongoDB.</p>
+      <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+        <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+        <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Popular</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->              
+</div>
               
             <div class="py-5 text-right">
               <a href="#" class="btn btn-dark px-5 py-3 text-uppercase"
@@ -197,7 +198,7 @@
     </main>
 <hr>
      <!-- FOOTER -->
-     <footer class="w-100 py-4 flex-shrink-0">
+     <footer class="w-100 py-4 flex-shrink-0 bg-dark" >
       <div class="container py-4">
           <div class="row gy-4 gx-5">
               <div class="col-lg-4 col-md-6">
@@ -216,7 +217,7 @@
               </div>
               <div class="col-lg-2 col-md-6">
                   <h5 class="text-white mb-3">Quick links</h5>
-                  <ul class="list-unstyled text-muted">
+                  <ul class="list-unstyled text-mute d">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">About</a></li>
                       <li><a href="#">Get started</a></li>
